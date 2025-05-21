@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../node_test"
+		},
+		{
+			"path": "../../my-app"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {}
+}

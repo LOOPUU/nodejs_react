@@ -1,0 +1,32 @@
+<%- include('partials/header') %>
+
+  <h1 class="text-center">ข้อมูลจากฐานข้อมูล</h1>
+  <div class="container">  
+    <a href="add" class="btn btn-info" role="button">ADD</a>
+     
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>ชื่อ</th>
+          <th>รายละเอียด</th>
+          <th>จัดการ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% rows.forEach(function(row) { %>
+        <tr>
+          <td><%= row.id %></td>
+          <td><%= row.name %></td>
+          <td><%= row.name2 %></td>
+          <td>
+            <a href="edit/<%= row.id %>" class="btn btn-warning" role="button">EDIT</a>
+            <a href="delete/<%= row.id %>" class="btn btn-danger" role="button">DELETE</a>
+          </td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+
+<%- include('partials/footer') %>
